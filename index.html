@@ -9,6 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+ 
   <title>Zack</title>
   <link rel="shortcut icon" href="./Photos/favicon.ico">
 
@@ -44,8 +45,18 @@
   <section class="hero">
      <div>
        <h1>I am Zacharia Ndung'u </h1>
-       <p id="typing">My name</p>
+       <p id="typing"></p>
      </div>
+
+     <script>
+       var typed = new Type(".typing", {
+    strings: ['Front-end Developer', 'Content-Writer', 'SEO Expert'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+} )
+     </script>
+     
   </section>
   <main>
  <!-- About Section -->
@@ -127,4 +138,9 @@ Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, e
    </div>
  </div>
 </main>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</script>
+
 </body>
