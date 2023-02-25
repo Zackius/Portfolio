@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Home from "../Pages/Home";
 import {
   FaBars,
   FaTimes,
@@ -8,147 +9,115 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { Link } from "react-scroll";
-import profile from "../assests/1.jpg";
-// import {SiUpwork} from "react-icons/si"
+import me from "../assests/me.JPG"
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[80px] flex  justify-between  items-center  px-4  bg-[#0a192f] text-gray-300">
-      <div>
-        <img className="w-12 h-12 rounded-full" src={`${profile}`} alt="logo" />
+    <div>
+            <div onClick={handleClick} className=" md:hidden z-10">
+        {!nav? <FaBars /> : <FaTimes />}
       </div>
-
-      <ul className="hidden md:flex">
-        <li className="hover:scale-110">
+      <div
+        className={
+         !nav?  Home : "hidden"
+        }
+      >
+      </div>
+      <div  className=" fixed w-[400px] h-[1000px]  align-center p-8 bg-[#a09e9e] text-gray-300">
+ 
+      <div className="pt-8" >
+        <img  className="rounded-full" src={me} alt = "myphoto" />
+      </div>
+      <div  className=" text-center pt-4">
+        <h2 className="text-xl md:text-2xl font-bold text-white ">Zacharia Kamau Ndung'u</h2>
+      </div>
+      <div className=" flex p-6">
+      <a
+              className=" hover:scale-125 hover:text-white items-center  w-full text-blue-700"
+              href="https://www.linkedin.com/in/zachary-ndung-u-85023a201/"
+            > <FaLinkedin size={30} />
+        </a>
+        <a
+              className="hover:scale-125 hover:text-white  items-center  w-full text-blue-700"
+              href="https://medium.com/@ndunguzachary"
+            > <FaMedium size={30} />
+        </a>
+        <a
+              className=" hover:scale-125 hover:text-white  items-center  w-full text-blue-700"
+              href="https://github.com/Zackius"
+            > <FaGithub size={30} />
+        </a>
+        <a
+              className=" hover:scale-125 hover:text-white  items-center  w-full text-blue-700"
+              href="https://mobile.twitter.com/Zack_K_N"
+            ><FaTwitter size={30} />
+            </a>
+      </div>
+      <div>
+      <ul className="md:flex-cols text-center">
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
+          <Link to="home" smooth={true} duration={300}>
+            Home   <ul className="hidden md:flex-rows">
+        <li className="hover:scale-125 hover:text-blue-700 ">
           <Link to="home" smooth={true} duration={300}>
             Home
           </Link>
         </li>
-        <li className="hover:scale-110">
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
           <Link to="about" smooth={true} duration={300}>
             About
           </Link>
         </li>
-        <li className="hover:scale-110">
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
           <Link to="skills" smooth={true} duration={300}>
             Skills
           </Link>
         </li>
-        <li className="hover:scale-110">
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
           <Link to="work" smooth={true} duration={300}>
             Work
           </Link>
         </li>
-        <li className="hover:scale-110">
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
           <Link to="/" smooth={true} duration={300}>
             Blog
           </Link>
         </li>
-        <li className="hover:scale-110">
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
           <Link to="contact" smooth={true} duration={300}>
             Contact
           </Link>
         </li>
       </ul>
-
-      {/* Huamber */}
-      <div onClick={handleClick} className=" md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
-      </div>
-
-      {/* Mobile Menu */}
-      <div
-        className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col  justify-center items-center"
-        }
-      >
-          <div>
-        <img className="w-24 h-24 rounded-full" src={`${profile}`} alt="logo" />
-      </div>
-        <ul>
-        <li className="py-6 text-4xl">
-          <Link to="home" smooth={true} duration={300}>
-            Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
           <Link to="about" smooth={true} duration={300}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
           <Link to="skills" smooth={true} duration={300}>
             Skills
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
           <Link to="work" smooth={true} duration={300}>
             Work
           </Link>
-          </li>
-          <li className="py-6 text-4xl">
-          <Link to="/" smooth={true} duration={300}>
-            Blog
-          </Link>
         </li>
-        <li className="py-6 text-4xl">
+      
+        <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
           <Link to="contact" smooth={true} duration={300}>
             Contact
           </Link>
-          </li>
-        </ul>
-      </div>
-      {/* Social Icons */}
-      <div className=" hidden  lg:flex fixed  flex-col top-[35%] left-0">
-        <ul>
-          <li className="w-[160px] h-[60px] flex justify-between  items-center ml-[-100px]  hover:ml-[-10px] duration-300 bg-blue-700 rounded-lg">
-            <a
-              className="flex justify-between  items-center  w-full text-gray-300"
-              href="https://www.linkedin.com/in/zachary-ndung-u-85023a201/"
-            >
-              Linkedin <FaLinkedin size={20} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between  items-center ml-[-100px]  hover:ml-[-10px] duration-300 bg-[#000000] rounded-lg">
-            <a
-              className="flex justify-between  items-center  w-full text-gray-300"
-              href="https://medium.com/@ndunguzachary"
-            >
-              Medium
-              <FaMedium size={20} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between  items-center ml-[-100px]  hover:ml-[-10px] duration-300 bg-[#000000] rounded-lg">
-            <a
-              className="flex justify-between  items-center  w-full text-gray-300"
-              href="https://github.com/Zackius"
-            >
-              Github <FaGithub size={20} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px]  flex  justify-between   items-center  ml-[-100px]  hover:ml-[-10px] duration-300 bg-[#38aedd] rounded-lg">
-            <a
-              className="flex justify-between  items-center  w-full text-gray-300"
-              href="https://mobile.twitter.com/Zack_K_N"
-            >
-              Twitter <FaTwitter size={20} />
-            </a>
-          </li>
-          {/* <li className="w-[160px] h-[60px]  flex  justify-between   items-center  ml-[-100px]  hover:ml-[-10px] duration-300 bg-[#41b915] rounded-lg">
-            <a
-              className="flex justify-between  items-center  w-full text-gray-300"
-              href="https://www.upwork.com/freelancers/~011065ae8c811d4f58"
-            >
-              UpWork <SiUpwork size={20} />
-            </a>
-          </li> */}
-        </ul>
-      </div>
+        </li>
+      </ul>
+        </div>
+        </div>
     </div>
   );
 };

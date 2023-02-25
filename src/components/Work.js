@@ -1,5 +1,5 @@
 import React from "react";
-import buildImg from "../assests/code1.jpg";
+import { vinc } from "../assests";
 import libraryImg from "../assests/library.jpg";
 import recipeImg from "../assests/recipe.jpg";
 
@@ -18,15 +18,15 @@ const Work = () => {
         </div>
         <div className="grid sm:grid-cols-2  md:grid-cols-3  gap-4">
           <div
-            style={{ backgroundImage: `url(${buildImg})` }}
+            style={{ backgroundImage: `url(${vinc})` }}
             className="shadow-lg  shadow-[#040c16]  group  container  rounded-md  flex  justfiy-center  items-center  mx-auto  content-div "
           >
             <div className="opacity-0  group-hover:opacity-100">
               <span className="text-2xl  font-bold text-white  tracking-wider">
-                React js App
+                Vinc Ventures ecommerce websites
               </span>
               <div className="pt-8  text-center">
-                <a href="/">
+                <a href="https://vincventures.co.ke/">
                   <button className="text-center rounded-lg  px-4 py-3  m-2  bg-white text-gray-600 font-bold text-lg">
                     Demo
                   </button>
