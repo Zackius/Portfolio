@@ -4,18 +4,15 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-[1000px]l h-[600px]  bg-[#0a192f] text-gray-300"
-    >
-      <div className="flex  flex-col  justify-center  items-center  w-full  h-full">
-          <div className="sm:text-right pb-8 pl-4">
+      className="w-fulll h-[400px]  bg-[#0a192f] text-gray-300" >
+      <div className="flex flex-cols justify-center  items-center  w-full  h-full">
+          <div className="sm:text-right pl-4">
             <p className="text-4xl font-bold inline border-b-4 border-blue-300">
               About
             </p>
           </div>
-          <div className="sm:text-right  text-4xl  font-bold">
-          </div>
-          <div>
-            <p>
+          <div className="text-center p-24">
+            <p className="text-lg">
               I am a performance-driven person with vast experience in creating
               web applications. I am a forward-thinking individual with an
               innovative mindset and a strong conceptual thinker that embraces

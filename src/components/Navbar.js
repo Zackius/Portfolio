@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BiCopyright } from "react-icons/bi";
 import Home from "../Pages/Home";
 import {
   FaBars,
@@ -16,21 +17,19 @@ export const Navbar = () => {
 
   const handleClick = () => setNav(!nav);
   return (
-    <div>
-            <div onClick={handleClick} className=" md:hidden z-10">
-        {!nav? <FaBars /> : <FaTimes />}
-      </div>
+    <div className=" bg-[#a09e9e]">
       <div
         className={
          !nav?  Home : "hidden"
-        }
-      >
+        }>
+        <div className=" fixed w-[400px] h-[1000px]  align-center p-8 bg-[#a09e9e]  text-gray-300"> 
+        <div onClick={handleClick} className=" md:hidden z-10">
+        {!nav? <FaBars /> : <FaTimes />}
       </div>
-      <div  className=" fixed w-[400px] h-[1000px]  align-center p-8 bg-[#a09e9e] text-gray-300">
- 
       <div className="pt-8" >
         <img  className="rounded-full" src={me} alt = "myphoto" />
-      </div>
+          </div>
+        
       <div  className=" text-center pt-4">
         <h2 className="text-xl md:text-2xl font-bold text-white ">Zacharia Kamau Ndung'u</h2>
       </div>
@@ -117,7 +116,8 @@ export const Navbar = () => {
         </li>
       </ul>
         </div>
-        </div>
+      </div>
     </div>
+   </div>
   );
 };
