@@ -13,7 +13,7 @@ const App = () => {
       <aside class="h-screen sticky top-0">
       <Navbar/>
       </aside>
-      <main >
+      <main class="flex-1" >
            <Hero />
       <About />
       <Skills />

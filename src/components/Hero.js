@@ -1,31 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Navbar } from "./Navbar";
 import Typewriter from 'typewriter-effect';
+import {
+  FaBars,
+  FaTimes
+} from "react-icons/fa";
 
 const Hero = () => {
+  const [nav, setNav] = useState(false);
 
+  const handleClick = () => setNav(!nav);
   return (
     <div
       name="home"
-      className=" w-full  h-[800px] container-div"
+      className=" w-full  h-[700px] container-div"
     >
+       <div onClick={handleClick} className=" ">
+        {!nav? <FaBars className="text-gray-700" size={20} /> : <FaTimes   className="text-gray-700" size={20}/>}
+      </div>
       {/* Container  */}
-      <div className="flex  justify-center  items-center  w-full  h-full">
-        <div className="max-w-[1350px] w-full  grid  sm:grid-cols-2   gap-12 px-4">
+      <div className="flex  items-center  w-full  h-full">
+        <div className="max-w-[1350px] grid px-6   sm:grid-cols-2 md:px-36  gap-12">
           <div className="text-center">
-            <div className="flex ">
-            <h2 className="text-4xl  sm:text-4xl font-bold text-[#181e30]">
-              Hi, I am
-            </h2>
-            <Typewriter  className="text-4xl"
+            <div className=" flex p-4   items-center">
+            <h2 className="text-4xl  font-bold text-[#181e30]">
+                Hi, its Zack
+              </h2>
+            </div>
+            <div className=" flex">
+            <h2 className="text-3xl font-mono font-bold text-[#2b3b6a]">
+                <Typewriter  className="text-4xl"
                 options={{
-    strings:[ 'FullStack Developer', 'Content Writer'],
+    strings:[ 'Full-Stack Developer', 'Content Writer'],
     autoStart: true,
     loop: true,
     skipAddStyles: true,
   }}
 />
+            </h2>
             </div>
+            
         
         <div>
           <button to='about'   className="text-black group  border-2 px-6  py-3  my-2 flex items-center hover:bg-blue-500 hover:border-blue-500">

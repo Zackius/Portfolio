@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { BiCopyright } from "react-icons/bi";
 import {
-  FaBars,
-  FaTimes,
   FaGithub,
   FaLinkedin,
   FaMedium,
@@ -12,24 +10,19 @@ import { Link } from "react-scroll";
 import me from "../assests/me.JPG"
 
 export const Navbar = () => {
-  const [nav, setNav] = useState(false);
 
-  const handleClick = () => setNav(!nav);
   return (
     <div className=" bg-[#a09e9e]">
       <div>
-        <div className="w-[350px] h-[1000px] sticky  align-center p-8 bg-[#a09e9e]  text-gray-300"> 
-        <div onClick={handleClick} className=" md:hidden z-10">
-        {!nav? <FaBars /> : <FaTimes />}
-      </div>
+        <div className=" hidden md:block w-[350px] h-[1000px]  align-center p-8 bg-[#0a192f] text-gray-300"> 
       <div className="pt-8" >
         <img  className="rounded-full" src={me} alt = "myphoto" />
           </div>
         
       <div  className=" text-center pt-4">
-        <h2 className="text-xl md:text-2xl font-bold text-white ">Zacharia Kamau Ndung'u</h2>
+        <h2 className="text-xl md:text-2xl font-bold underline shadow-sm text-white ">Zacharia Kamau Ndung'u</h2>
       </div>
-      <div className=" flex p-6">
+      <div className=" flex p-6 ">
       <a
               className=" hover:scale-125 hover:text-white items-center  w-full text-blue-700"
               href="https://www.linkedin.com/in/zachary-ndung-u-85023a201/"
