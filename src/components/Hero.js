@@ -11,7 +11,7 @@ const Hero = ({handleClick, nav}) => {;
       className=" w-full  h-[700px] container-div"
     >
         <div onClick={handleClick} className=" ">
-        {!nav? <FaBars className="text-back" size={20} /> : <FaTimes   className="text-black" size={20}/>}
+        {nav? <FaTimes   className="text-black" size={20}/> : <FaBars className="text-back" size={20} />}
       </div>
   
      

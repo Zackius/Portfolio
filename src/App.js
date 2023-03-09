@@ -12,8 +12,8 @@ const App = () => {
 
   const handleClick = () => setNav(!nav);
   return (
-    <div class='flex md:flex'>
-      <aside class="h-sreen overflow-auto sticky top-0">
+    <div class='flex gap-1'>
+      <aside class="h-screen  sticky top-0">
         <Navbar handleClick={handleClick} nav={nav } />
       </aside>
       <main class="flex-1 mr-2" >
