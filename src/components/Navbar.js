@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BiCopyright } from "react-icons/bi";
-import Home from "../Pages/Home";
 import {
   FaBars,
   FaTimes,
@@ -18,11 +17,8 @@ export const Navbar = () => {
   const handleClick = () => setNav(!nav);
   return (
     <div className=" bg-[#a09e9e]">
-      <div
-        className={
-         !nav?  Home : "hidden"
-        }>
-        <div className=" fixed w-[400px] h-[1000px]  align-center p-8 bg-[#a09e9e]  text-gray-300"> 
+      <div>
+        <div className="w-[350px] h-[1000px] sticky  align-center p-8 bg-[#a09e9e]  text-gray-300"> 
         <div onClick={handleClick} className=" md:hidden z-10">
         {!nav? <FaBars /> : <FaTimes />}
       </div>

@@ -10,7 +10,7 @@ const Hero = () => {
       className=" w-full  h-[800px] container-div"
     >
       {/* Container  */}
-      <div className="flex  pl-[400px] justify-center  items-center  w-full  h-full">
+      <div className="flex  justify-center  items-center  w-full  h-full">
         <div className="max-w-[1350px] w-full  grid  sm:grid-cols-2   gap-12 px-4">
           <div className="text-center">
             <div className="flex ">
@@ -19,7 +19,7 @@ const Hero = () => {
             </h2>
             <Typewriter  className="text-4xl"
                 options={{
-    strings:[ 'FullStack Developer'],
+    strings:[ 'FullStack Developer', 'Content Writer'],
     autoStart: true,
     loop: true,
     skipAddStyles: true,
