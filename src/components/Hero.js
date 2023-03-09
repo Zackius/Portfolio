@@ -1,27 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { Navbar } from "./Navbar";
+import { FaBars, FaTimes} from "react-icons/fa"
 import Typewriter from 'typewriter-effect';
-import {
-  FaBars,
-  FaTimes
-} from "react-icons/fa";
 
-const Hero = () => {
-  const [nav, setNav] = useState(false);
 
-  const handleClick = () => setNav(!nav);
+const Hero = ({handleClick, nav}) => {;
   return (
     <div
       name="home"
       className=" w-full  h-[700px] container-div"
     >
-       <div onClick={handleClick} className=" ">
-        {!nav? <FaBars className="text-gray-700" size={20} /> : <FaTimes   className="text-gray-700" size={20}/>}
+        <div onClick={handleClick} className=" ">
+        {!nav? <FaBars className="text-back" size={20} /> : <FaTimes   className="text-black" size={20}/>}
       </div>
+  
+     
       {/* Container  */}
       <div className="flex  items-center  w-full  h-full">
-        <div className="max-w-[1350px] grid px-6   sm:grid-cols-2 md:px-36  gap-12">
+        <div className="max-w-[1350px] grid px-6   sm:grid-cols-2 md:px-60  gap-12">
           <div className="text-center">
             <div className=" flex p-4   items-center">
             <h2 className="text-4xl  font-bold text-[#181e30]">
