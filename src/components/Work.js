@@ -17,13 +17,13 @@ const Work = () => {
         <div className="grid sm:grid-cols-2  md:grid-cols-3  gap-4">
           <div
             style={{ backgroundImage: `url(${vinc})` }}
-            className="shadow-lg  shadow-[#040c16]  group  container  rounded-md  flex  justfiy-center  items-center  mx-auto  content-div "
+            className="shadow-lg  shadow-[#040c16]  container flex group   rounded-md justfiy-center  items-center  mx-auto  content-div "
           >
             <div className="opacity-0 p-2  group-hover:opacity-100">
               <a href="https://vincventures.co.ke/" className="text-sm  font-bold text-white  tracking-wider">
                 An E-commerce website where clients can view items according to category, choose an item and see the full description of the product. A client can also add items to a cart then proceeds to checking out where you add your  contact information by filling a form  for delivery. Cart has the feature of calculating the total amount of items selected. 
               </a>
-            </div>
+            </div> 
           </div>
           <div
             style={{ backgroundImage: `url(${libraryImg})` }}
