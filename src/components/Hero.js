@@ -4,17 +4,19 @@ import { FaBars, FaTimes} from "react-icons/fa"
 import Typewriter from 'typewriter-effect';
 
 
-const Hero = ({handleClick, nav}) => {;
+const Hero = ({ nav, handleClick }) => {;
   return (
     <div
       name="home"
       className=" w-full  h-[700px] container-div"
     >
-        <div onClick={handleClick} className=" ">
-        {nav? <FaTimes   className="text-black" size={20}/> : <FaBars className="text-back" size={20} />}
-      </div>
   
-     
+  <div
+        onClick={handleClick}
+        className=" z-10  text-[#0a192f]"
+      >
+        {!nav ? <FaBars /> : <FaTimes />}
+      </div>
       {/* Container  */}
       <div className="flex  items-center  w-full  h-full">
         <div className="max-w-[1350px] grid px-6   sm:grid-cols-2 md:px-60  gap-12">
@@ -25,7 +27,7 @@ const Hero = ({handleClick, nav}) => {;
               </h2>
             </div>
             <div className=" flex">
-            <h2 className="text-3xl font-mono font-bold text-[#2b3b6a]">
+            <h2 className="text-2xl md:text-4xl font-mono font-bold text-[#2b3b6a]">
                 <Typewriter  className="text-4xl"
                 options={{
     strings:[ 'Full-Stack Developer', 'Content Writer'],
