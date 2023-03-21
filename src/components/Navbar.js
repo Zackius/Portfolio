@@ -14,15 +14,15 @@ import me from "../assests/me.JPG"
 export const Navbar = ({nav, handleClick }) => {
 
   return (
-    <div className="h-[800px] ">
+    <div>
       {nav && (
         <div>
-          <div className=" w-[380px] h-[1000px] align-center p-8 bg-[#0a192f] text-gray-300 "> 
+          <div className=" w-[350px] align-center p-8 bg-[#0a192f] text-gray-300 "> 
             
           <div onClick={handleClick} className="md:hidden ">
         {nav? <FaBars className="text-gray-400" size={20} /> : <FaTimes   className="text-gray-400" size={20}/>}
       </div>
-            <div className="pt-8" >
+            <div className="pt-2" >
               <img  className="rounded-full" src={me} alt = "myphoto" />
                 </div>
               
