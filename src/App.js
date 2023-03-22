@@ -17,7 +17,7 @@ const App = () => {
       <aside class="h-screen flex col-span-1 sticky top-0 ">
         <Navbar handleClick={handleClick} nav={nav} />
       </aside>
-      <main class="flex-1 mr-2 overflow-x-hidden">
+      <main class="flex-1 mr-2 overflow-y-hidden">
         <Hero  handleClick={handleClick} nav={nav}/>
         <About />
         <Skills />
