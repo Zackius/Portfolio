@@ -2,7 +2,7 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { FaBars, FaTimes} from "react-icons/fa"
 import Typewriter from 'typewriter-effect';
-
+import { Link } from "react-scroll";
 
 const Hero = ({ nav, handleClick }) => {;
   return (
@@ -40,9 +40,12 @@ const Hero = ({ nav, handleClick }) => {;
             </div>
             
         
-        <div>
-          <button to='about'   className="text-black group  border-2 px-6  py-3  my-2 flex items-center hover:bg-blue-500 hover:border-blue-500">
-            View My Work
+            <div>
+              
+              <button to='about' className="text-black group  border-2 px-6  py-3  my-2 flex items-center hover:bg-blue-500 hover:border-blue-500">
+                <Link to="work" smooth={true} duration={1000}>
+                View My Work
+                </Link>
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3" />
             </span>

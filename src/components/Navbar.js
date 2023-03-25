@@ -56,36 +56,36 @@ export const Navbar = ({ nav}) => {
           <div>
             <ul className="md:flex-cols text-center">
               <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                <Link to="home" smooth={true} duration={300}>
+                <Link to="home" smooth={true} duration={1000}>
                   Home{" "}
                   <ul className="hidden md:flex-rows">
                     <li className="hover:scale-125 hover:text-blue-700 ">
-                      <Link to="home" smooth={true} duration={300}>
+                      <Link to="home" smooth={true} duration={1000 }>
                         Home
                       </Link>
                     </li>
                     <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                      <Link to="about" smooth={true} duration={300}>
+                      <Link to="about" smooth={true} duration={1000}>
                         About
                       </Link>
                     </li>
                     <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                      <Link to="skills" smooth={true} duration={300}>
+                      <Link to="skills" smooth={true} duration={1000}>
                         Skills
                       </Link>
                     </li>
                     <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                      <Link to="work" smooth={true} duration={300}>
+                      <Link to="work" smooth={true} duration={1000}>
                         Work
                       </Link>
                     </li>
                     <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                      <Link to="/" smooth={true} duration={300}>
+                      <Link to="/" smooth={true} duration={1000}>
                         Blog
                       </Link>
                     </li>
                     <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                      <Link to="contact" smooth={true} duration={300}>
+                      <Link to="contact" smooth={true} duration={1000}>
                         Contact
                       </Link>
                     </li>
@@ -93,23 +93,23 @@ export const Navbar = ({ nav}) => {
                 </Link>
               </li>
               <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                <Link to="about" smooth={true} duration={300}>
+                <Link to="about" smooth={true} duration={1000}>
                   About
                 </Link>
               </li>
               <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                <Link to="skills" smooth={true} duration={300}>
+                <Link to="skills" smooth={true} duration={1000}>
                   Skills
                 </Link>
               </li>
               <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                <Link to="work" smooth={true} duration={300}>
+                <Link to="work" smooth={true} duration={1000}>
                   Work
                 </Link>
               </li>
 
               <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                <Link to="contact" smooth={true} duration={300}>
+                <Link to="contact" smooth={true} duration={1000}>
                   Contact
                 </Link>
               </li>
@@ -175,36 +175,36 @@ export const Navbar = ({ nav}) => {
         <div>
           <ul className="text-center">
             <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-              <Link to="home" smooth={true} duration={300}>
+              <Link to="home" smooth={true} duration={1000}>
                 Home{" "}
                 <ul className="hidden md:flex-rows">
                   <li className="hover:scale-125 hover:text-blue-700 ">
-                    <Link to="home" smooth={true} duration={300}>
+                    <Link to="home" smooth={true} duration={1000}>
                       Home
                     </Link>
                   </li>
                   <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                    <Link to="about" smooth={true} duration={300}>
+                    <Link to="about" smooth={true} duration={1000}>
                       About
                     </Link>
                   </li>
                   <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                    <Link to="skills" smooth={true} duration={300}>
+                    <Link to="skills" smooth={true} duration={1000}>
                       Skills
                     </Link>
                   </li>
                   <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                    <Link to="work" smooth={true} duration={300}>
+                    <Link to="work" smooth={true} duration={1000}>
                       Work
                     </Link>
                   </li>
                   <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                    <Link to="/" smooth={true} duration={300}>
+                    <Link to="/" smooth={true} duration={1000}>
                       Blog
                     </Link>
                   </li>
                   <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-                    <Link to="contact" smooth={true} duration={300}>
+                    <Link to="contact" smooth={true} duration={1000}>
                       Contact
                     </Link>
                   </li>
@@ -212,23 +212,23 @@ export const Navbar = ({ nav}) => {
               </Link>
             </li>
             <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-              <Link to="about" smooth={true} duration={300}>
+              <Link to="about" smooth={true} duration={1000}>
                 About
               </Link>
             </li>
             <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-              <Link to="skills" smooth={true} duration={300}>
+              <Link to="skills" smooth={true} duration={1000}>
                 Skills
               </Link>
             </li>
             <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-              <Link to="work" smooth={true} duration={300}>
+              <Link to="work" smooth={true} duration={1000}>
                 Work
               </Link>
             </li>
 
             <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
-              <Link to="contact" smooth={true} duration={300}>
+              <Link to="contact" smooth={true} duration={1000}>
                 Contact
               </Link>
             </li>
