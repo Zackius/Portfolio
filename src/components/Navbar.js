@@ -10,12 +10,12 @@ import {
 import { Link } from "react-scroll";
 import me from "../assests/me.JPG";
 
-export const Navbar = ({ nav, handleClick }) => {
+export const Navbar = ({ nav}) => {
   return (
     <div>
       <div>
         <div className=" w-[350px] h-[1100px] hidden   align-center p-8 bg-[#0a192f] text-gray-300 ">
-          <div className="pt-2">
+          <div className="pt-">
             <img className="rounded-full" src={me} alt="myphoto" />
           </div>
 
@@ -134,11 +134,11 @@ export const Navbar = ({ nav, handleClick }) => {
       >
         {!nav ? <FaBars /> : <FaTimes />}
       </div> */}
-        <div className="pt-2">
+        <div className="pt-6">
           <img className="rounded-full" src={me} alt="myphoto" />
         </div>
 
-        <div className=" text-center pt-4">
+        <div className=" text-center pt-8">
           <h2 className="text-xl md:text-2xl font-bold underline shadow-sm text-white ">
             Zacharia Kamau Ndung'u
           </h2>
@@ -173,7 +173,7 @@ export const Navbar = ({ nav, handleClick }) => {
           </a>
         </div>
         <div>
-          <ul className="md:flex-cols text-center">
+          <ul className="text-center">
             <li className="hover:scale-125 hover:text-blue-700  p-3 font-bold text-xl">
               <Link to="home" smooth={true} duration={300}>
                 Home{" "}

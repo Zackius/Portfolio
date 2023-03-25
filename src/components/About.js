@@ -4,10 +4,10 @@ const About = () => {
   return (
     <div
       name="about"
-      className=" h-[400px]  bg-gray-400 text-white" >
-          <p className="text-4xl font-bold inline border-b-4 border-blue-300">
-              About
-            </p>
+      className=" h-[400px]" >
+        <div className='flex justify-center'>
+          <h2 className='text-2xl font-bold inline border-b-2'>About</h2>  
+          </div>  
       <div className="flex justify-center  items-center  w-full  h-full">
           <div className="text-center p-2">
             <p className="text-lg">

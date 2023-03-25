@@ -8,11 +8,11 @@ const Work = () => {
   return (
     <div
       name="work"
-      className=" w-full md:h-[600px] text-gray-300  bg-black"
+      className=" w-full md:h-[600px]"
     >
-      <p className="text-3xl  font-bold   border-b-1 text-gray-300 border-blue-300 ">
-          Projects
-          </p>
+  <div className='flex justify-center'>
+          <h2 className='text-2xl font-bold inline border-b-2'>Project</h2>  
+          </div>  
       <div className="max-w-[800px] mx-auto flex  flex-col  justify-center  w-full  h-full">
         <div className="grid sm:grid-cols-2  md:grid-cols-3  gap-4">
           <div

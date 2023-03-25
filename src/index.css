@@ -1,19 +1,27 @@
- 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Fasthand&family=Source+Code+Pro&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 @layer base{
-  body {
-    @apply   font-[Raleway];
+  h2{
+    @apply   font-[Source];
   }
+}
+h6{
+  @apply font-[Dancing]
+}
+
+
   li{
     @apply px-4;
     @apply cursor-pointer
   }
-}
+
 .container-div{
   background-image: url(./assests/wave\ \(4\).svg);
   background-repeat: no-repeat;

@@ -27,10 +27,10 @@ const Hero = ({ nav, handleClick }) => {;
               </h2>
             </div>
             <div className=" flex">
-            <h2 className="text-2xl md:text-4xl font-mono font-bold text-[#2b3b6a]">
-                <Typewriter  className="text-4xl"
+            <h2 className="text-2xl md:text-3xl font-semibold text-[#2b3b6a]">
+                <Typewriter
                 options={{
-    strings:[ 'Full-Stack Developer', 'Content Writer'],
+    strings:[ 'Full-Stack Web Developer'],
     autoStart: true,
     loop: true,
     skipAddStyles: true,

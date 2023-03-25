@@ -4,9 +4,10 @@ import {BiPhoneCall} from "react-icons/bi"
 
 const Contact = () => (
   <div name='contact' className='w-full h-[500px] bg-gradient-to-r from-blue-300 via-white  to-gray-300  flex justify-center'>
+   
     <form method='POST' action='https://getform.io/f/458b09aa-613b-43d9-a093-58ffc19a0b51' className='flex flex-col  max-w-[400px] w-full'>
       <div className=' pb-8'>
-        <p className='text-4xl font-bold inline border-b-4 border-blue-700 text-[#0a192f]'> Contact</p>
+      <h2 className='text-2xl font-bold inline border-b-2 '> Contact</h2>
         <p className='text-black  py-4'>Want to say hello or just offer some feedback?
           Feel free to reach me  anytime.</p>
         <div className='flex flex-cols-2  '>
