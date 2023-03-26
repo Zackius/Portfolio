@@ -19,24 +19,26 @@ const Hero = ({ nav, handleClick }) => {;
       </div>
       {/* Container  */}
       <div className="flex  items-center  w-full  h-full">
-        <div className="max-w-[1350px] grid px-6   sm:grid-cols-2 md:px-60  gap-12">
-          <div className="text-center">
-            <div className=" flex p-4   items-center">
-            <h2 className="text-4xl  font-bold text-[#181e30]">
+        <div className="md:px-60">
+            <div className=" p-4   items-center">
+            <h2 className="text-4xl font-header   font-semibold">
                 Hi, its Zack
               </h2>
             </div>
-            <div className=" flex">
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#2b3b6a]">
+            <div>
+            <div className="  flex  gap-2 text-2xl l font-light text-[#0a192f]">
+               I' am a
                 <Typewriter
                 options={{
-    strings:[ 'Full-Stack Web Developer'],
+    strings:[ 'Full-Stack Web Developer', 'Content Writer'],
     autoStart: true,
     loop: true,
     skipAddStyles: true,
   }}
 />
-            </h2>
+         
+                
+
             </div>
             
         
