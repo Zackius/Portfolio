@@ -11,10 +11,7 @@ const About = () => {
       <div className="flex justify-center  items-center  w-full  h-full">
           <div className="text-center p-2">
             <p className="text-lg">
-              I am a performance-driven person with vast experience in creating
-              web applications. I am a forward-thinking individual with an
-              innovative mindset and a strong conceptual thinker that embraces
-              challenges with an analytical and creative approach.
+     Am a software Developer with 3 years of expererience in creating digital products that aid businesses in expanding their online presence and maximize their potential.  I am well versed with modern technologies and practices in both back-end and front-end development.  My expereince cover a wide range of areas,  
             </p>
           </div>
         </div>

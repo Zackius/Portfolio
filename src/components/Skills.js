@@ -1,11 +1,7 @@
 import React from 'react'
-import { javascript } from '../assests'
-import { html } from '../assests'
-import { css } from '../assests'
-import { reacts } from '../assests'
-import { github } from '../assests'
-import { tailwind } from '../assests'
-import {ruby} from '../assests'
+
+import { css, reacts, git, tailwind, ruby, express, node, html , javascript} from '../assests'
+
 
 
 const Skills = () => {
@@ -44,12 +40,20 @@ const Skills = () => {
                       <p className='my-4 text-white'>REACT JS</p>
                   </div>
                   <div className='shadow-md shadow-[#040c16] hover:scale-110  bg-[#0a192f] duration-500'>
-                      <img className='w-20 mx-auto' src={github} alt='GITHUB icon' />
-                      <p className='my-4 text-white'>GITHUB</p>
+                      <img className='w-20 mx-auto' src={git} alt='GITHUB icon' />
+                      <p className='my-4 text-white'>GIT</p>
                   </div>
                   <div className='shadow-md shadow-[#040c16] hover:scale-110  bg-[#0a192f] duration-500'>
                       <img className='w-20 mx-auto' src={ruby} alt='GITHUB icon' />
                       <p className='my-4 text-white'>RUBY ON RAILS</p>
+                  </div>
+                  <div className='shadow-md shadow-[#040c16] hover:scale-110  bg-[#0a192f] duration-500'>
+                      <img className='w-20 mx-auto' src={node} alt='GITHUB icon' />
+                      <p className='my-4 text-white'>Node Js</p>
+                  </div>
+                  <div className='shadow-md shadow-[#040c16] hover:scale-110  bg-[#0a192f] duration-500'>
+                      <img className='w-20 mx-auto' src={express} alt='GITHUB icon' />
+                      <p className='my-4 text-white'>Express Js</p>
                   </div>
               </div>
                   

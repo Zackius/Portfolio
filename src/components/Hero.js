@@ -22,7 +22,7 @@ const Hero = ({ nav, handleClick }) => {;
         <div className="md:px-60">
             <div className=" p-4   items-center">
             <h2 className="text-4xl font-header   font-semibold">
-                Hi, its Zack
+                Hi, am  Zack
               </h2>
             </div>
             <div>
@@ -30,7 +30,7 @@ const Hero = ({ nav, handleClick }) => {;
                I' am a
                 <Typewriter
                 options={{
-    strings:[ 'Full-Stack Web Developer', 'Content Writer'],
+    strings:[ 'Front-end Developer', 'Content Writer'],
     autoStart: true,
     loop: true,
     skipAddStyles: true,
