@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/ui/Sidebar";
+import Hero from "@/components/ui/Hero";
+import Skills from "@/components/ui/Skills";
+import Projects from "@/components/ui/Projects";
+import AlertBox from "@/components/ui/AlertBox";
 
 
 
@@ -19,9 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex items-start justify-between`}>
+      <body className={`${inter.className} flex items-start justify-between bg-gradient-to-r from-gray-300 to-gray-400`}>
         <Sidebar/>
-        <main className="w-full h-full"> 
+        <main className="w-full h-full pl-[330px]"> 
+        <AlertBox/>
+        <Hero/>
+        <Skills/>
+        <Projects/>
         {children}
         </main>
         
