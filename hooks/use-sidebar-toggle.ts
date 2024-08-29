@@ -1,22 +1,16 @@
-import {create} from "zustand"
-import { persist, createJSONStorage } from "zustand/middleware";
+// use-sidebar-toggle.ts
+import { create } from 'zustand';
 
-interface useSidebarToggleStore {
+interface SidebarState {
   isOpen: boolean;
-  setIsOpen: () => void;
+  isMiniSidebar: boolean;
+  toggleSidebar: () => void;
+  toggleSidebarType: () => void;
 }
 
-export const useSidebarToggle = create(
-  persist<useSidebarToggleStore>(
-    (set, get) => ({
-      isOpen: true,
-      setIsOpen: () => {
-        set({ isOpen: !get().isOpen });
-      }
-    }),
-    {
-      name: 'sidebarOpen',
-      storage: createJSONStorage(() => localStorage)
-    }
-  )
-);
+export const useSidebarToggle = create<SidebarState>((set) => ({
+  isOpen: true,
+  isMiniSidebar: false, // Default to full sidebar
+  toggleSidebar: () => set((state) => ({ isOpen: !state.isOpen })),
+  toggleSidebarType: () => set((state) => ({ isMiniSidebar: !state.isMiniSidebar })),
+}));
