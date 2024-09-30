@@ -18,7 +18,7 @@ const Hero = () => {
         
         <p className='font-xl font-serif text-[18px] md:text-[20px] pl-4 md:pl-6'>A FullStack Software Engineer:</p>
         
-        <p className="w-full text-[40px] sm:text-[20px] md:text-[22px] text-gray-900 font-serif pl-4 md:pl-22 text-center mx-auto">
+        <p className="w-full text-[18px] sm:text-[20px] md:text-[22px] text-gray-900 font-serif pl-4 md:pl-22 text-center mx-auto">
           I'm a creative and driven fullstack web developer dedicated to crafting seamless, responsive, and dynamic web applications. I love turning innovative ideas into reality, focusing on delivering high-quality, user-friendly digital experiences.
         </p>
       </div>
