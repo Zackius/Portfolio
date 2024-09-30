@@ -1,11 +1,5 @@
 'use client'
 import React from 'react';
-import { IoMenuSharp } from 'react-icons/io5';
-import Sidebar from './Sidebar';
-import { useSidebarToggle } from '@/hooks/use-sidebar-toggle';
-import { SidebarToggle } from '../admin-panel/sidebar-toggle';
-import { cn } from '@/lib/utils';
-import { useStore } from '@/hooks/use-store';
 
 const Hero = () => {
   return (
