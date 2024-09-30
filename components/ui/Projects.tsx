@@ -9,6 +9,10 @@ import React from 'react'
   } from "@/components/ui/card"
   import Image from 'next/image'
   import { Label } from "@/components/ui/label"
+  import Profile from "@/assests/images/profile1.jpg"
+
+  import Sacco from "@/assests/images/sacco-digbit.jpg"
+  import Balmy from "@/assests/images/balmybook.png"
 import { Button } from './button'
 
 
@@ -29,7 +33,7 @@ const Projects = () => {
                 live: "Live",
                 github: "GitHub", 
                 name: "Sacco System", 
-                image: ""
+                image: Sacco
             },
             {
                 live: "Live",
@@ -47,7 +51,7 @@ const Projects = () => {
                 live: "Live",
                 github: "GitHub", 
                 name: "Recipe Book", 
-                image: ""
+                image: Balmy
             }
         ]
         }]
@@ -64,7 +68,7 @@ const Projects = () => {
               <Image
                 src={project.image}
                 alt={project.name}
-                className='w-[350px] h-[200px] object-cover rounded-full'
+                className='w-[350px] h-[200px] object-cover rounded-md'
               />
             </CardContent>
             <CardFooter className="flex justify-between">

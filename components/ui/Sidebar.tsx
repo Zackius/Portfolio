@@ -14,22 +14,13 @@ import {
     CommandItem,
     CommandList,    
   } from "@/components/ui/command"
-  import { useSidebarToggle } from '@/hooks/use-sidebar-toggle';
-  import {useStore} from "@/hooks/use-store"
-  import { SidebarToggle } from '../admin-panel/sidebar-toggle';
-
-  
-
-import Link from 'next/link'
-import { House, BriefcaseBusiness, Construction , Newspaper } from 'lucide-react';
 import { Separator } from "@/components/ui/separator"
-import { cn } from '@/lib/utils';
 
 const Sidebar = () => {
  
     return (
-  <div>
-<div className="flex flex-col h-full justify-between m-6">
+  <div  className='m-6 justify-between'>
+<div className="flex flex-col h-full justify-between">
     <div>
         <Image
           src={Profile}

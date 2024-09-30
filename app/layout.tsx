@@ -7,7 +7,7 @@ import Skills from "@/components/ui/Skills";
 import Projects from "@/components/ui/Projects";
 import { useStore } from "@/hooks/use-store";
 import { useSidebarToggle } from "@/hooks/use-sidebar-toggle";
-import MiniSidebar from "@/components/ui/SidebarHide";
+import MiniSidebar from "@/components/ui/MiniSidebar";
 import { cn } from "@/lib/utils";
 import { useMediaQuery } from 'react-responsive';
 
